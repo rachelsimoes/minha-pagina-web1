@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Encurtador de URL</title>
+	
+  //setting our CSS document
+	<link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style1.css">
+  
+  /*I choose to set normalize.css because it is a small CSS file that provides better 
+   consistency between broswers in the default styling of HTML elements.*/
+	<link rel="stylesheet" href="normalize1.css">
+  
+</head>
+<body> 
+		
+		<header class="logo">
+			<h1>Ushor</h1>
+			<p>Encurtador de URL</p>
+		</header>
+
+//creating the container to paste the urls links
+		<div class="input-flex-container">
+			<input type="text" class="long-url" placeholder="Coloque aqui o link para encurtar">
+			<button onclick="function()" type="submit" class="btn btn-send">Encurtar!</button>
+		</div>
+
+//putting the result on the screen
+		<div class="result-flex-container">
+			<span class="resulting-url"></span>
+    </div>
+
+//creating our footer putting my linkedin
+	<footer>
+		<p>Made by <a href="https://www.linkedin.com/in/rachel-sim%C3%B5es-b5860966/" target="_blank">Rachel</a></p>
+	</footer>
+
+//the magic it is here, see .js file to know more
+	<script type="text/javascript" src="shorthand.client.js"></script>
+	
+// setting the result with no need to reload the page  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
